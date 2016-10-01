@@ -11,6 +11,38 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(SiteMetaSeeder::class);
     }
+}
+
+class SiteMetaSeeder extends Seeder
+{
+    /**
+     * Run the Site Meta seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        \App\SiteMeta::create([
+            'name'=>'Github',
+            'value'=>'https://github.com/yarwest'
+        ]);
+
+        \App\SiteMeta::create([
+            'name'=>'LinkedIn',
+            'value'=>'https://www.linkedin.com/in/yarno-boelens-16b611a4'
+        ]);
+
+        \App\SiteMeta::create([
+            'name'=>'Email',
+            'value'=>'YarnoBoelens@gmail.com'
+        ]);
+
+        \App\SiteMeta::create([
+            'name'=>'Phone Number',
+            'value'=>'0031 642498359'
+        ]);
+    }
+
 }
