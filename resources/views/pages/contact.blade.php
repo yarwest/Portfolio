@@ -10,7 +10,7 @@
         <h1 class="title text-center">Contact Me</h1>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                {{ Form::open(['url'=>'#', 'method'=>'POST', 'class'=>'form-horizontal']) }}
+                {{ Form::open(['url'=>'contact/send', 'method'=>'POST', 'class'=>'form-horizontal']) }}
                 <div class="form-group">
                     <label for="nom" class="col-sm-4 control-label">Full Name</label>
                     <div class="col-sm-8">
@@ -24,15 +24,9 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="phone" class="col-sm-4 control-label">Phone Number</label>
+                    <label for="message" class="col-sm-4 control-label">Message</label>
                     <div class="col-sm-8">
-                        {{ Form::text('phone',null,['class'=>'form-control','id'=>'phone','placeholder'=>'Ex: 0685164893', 'required']) }}
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="phone" class="col-sm-4 control-label">Message</label>
-                    <div class="col-sm-8">
-                        {{ Form::textarea('phone',null,['class'=>'form-control','id'=>'phone','placeholder'=>'Enter your message here', 'required']) }}
+                        {{ Form::textarea('message', null,['class'=>'form-control','id'=>'message','placeholder'=>'Enter your message here', 'required']) }}
                     </div>
                 </div>
                 <div class="text-right">

@@ -22,5 +22,8 @@ Route::group(['middleware'  =>  ['auth']], function () {
         Route::resource('site_meta', 'SiteMetaController');
     });
 });*/
-// //any other page in pages
+
+
+//any other page in pages
+Route::post('/contact/send', 'PageController@send');
 Route::get('/{page?}', 'PageController@show')->where('page','.*');
