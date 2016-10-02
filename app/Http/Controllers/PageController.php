@@ -22,7 +22,7 @@ class PageController extends Controller {
 		}
 
 		//We need to pass site data(address,phoneNO,social media links,etc)
-		$site_meta = \App\SiteMeta::all('value', 'name');
+		$site_meta = \App\SiteMeta::all('value', 'name', 'isLink');
 		//switch:$site_data should be passed no matter what
 		switch ($page) {
 

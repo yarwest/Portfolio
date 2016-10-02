@@ -26,12 +26,14 @@ class SiteMetaSeeder extends Seeder
     {
         \App\SiteMeta::create([
             'name'=>'Github',
-            'value'=>'https://github.com/yarwest'
+            'value'=>'https://github.com/yarwest',
+            'isLink'=>true
         ]);
 
         \App\SiteMeta::create([
             'name'=>'LinkedIn',
-            'value'=>'https://www.linkedin.com/in/yarno-boelens-16b611a4'
+            'value'=>'https://www.linkedin.com/in/yarno-boelens-16b611a4',
+            'isLink'=>true
         ]);
 
         \App\SiteMeta::create([

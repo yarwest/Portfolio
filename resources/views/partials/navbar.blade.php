@@ -8,14 +8,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Compean <small>&amp; Sons</small></a>
+            <a class="navbar-brand" href="/">Yarno Boelens</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="{{ Request::segment(1) === 'contact' ? 'active' : '' }}"><a href="/contact">Contact</a></li>
-                @if(Auth::check())
+                <!--@if(Auth::check())
 
                 @if(Auth::user()->isAdmin)
 
@@ -24,7 +24,7 @@
                 @else
                 <li class="{{ Request::segment(1) === 'login' ? 'active' : '' }}"><a href="/login"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
                 <li class="{{ Request::segment(1) === 'register' ? 'active' : '' }}"><a href="/register"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
-                @endif
+                @endif -->
             </ul>
         </div>
         <!-- /.navbar-collapse -->

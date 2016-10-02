@@ -12,7 +12,7 @@
 */
 
 //sets all of Laravel's Auth routes
-Route::auth();
+/*Route::auth();
 Route::get('/login/activation/check/{token}', 'Auth\LoginController@activate');
 
 Route::group(['middleware'  =>  ['auth']], function () {
@@ -21,6 +21,6 @@ Route::group(['middleware'  =>  ['auth']], function () {
         Route::resource('/', 'DashboardController');
         Route::resource('site_meta', 'SiteMetaController');
     });
-});
+});*/
 // //any other page in pages
 Route::get('/{page?}', 'PageController@show')->where('page','.*');

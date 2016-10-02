@@ -18,7 +18,11 @@
     <div class="container">
         <h2>Site Meta</h2>
         @foreach($site_meta as $data)
-            <p>{{$data->name}}: {{$data->value}}</p>
+            @if($data->isLink)
+                <a href="{{$data->value}}">{{$data->name}}</a>
+            @else
+                <p>{{$data->name}}: {{$data->value}}</p>
+            @endif
         @endforeach
     </div>
 @endsection

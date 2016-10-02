@@ -18,6 +18,7 @@ class CreateOtherEntities extends Migration
                 $table->increments('id');
                 $table->string('name')->unique();
                 $table->string('value');
+                $table->boolean('isLink')->default(false);
             });
         }
     }
