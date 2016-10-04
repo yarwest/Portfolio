@@ -7,7 +7,6 @@
 */
 namespace App\Http\Controllers;
 use Mail;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class PageController extends Controller {
@@ -56,18 +55,9 @@ class PageController extends Controller {
     public function send(Request $request) {
         $name = $request->input('name');
         $email = $request->input('email');
-        $message = $request->input('message');
+        $textAreaInput = $request->input('message');
 
-        Mail::raw("<h2>Hello!</h2>
-
-<p>Someone filled in the contact form on your website :)</p>
-
-<p>Name: {{$name}}</p>
-<p>Email: {{$email}}</p>
-<p>Message: {{$message}}</p>
-
-<h3>Good luck!</h3>", function ($m) {
-            $m->from('contact@yarwest.com', 'Yarwest.com');
+        Mail::send('emails.form', ['name'=>$name, 'email'=>$email, 'textAreaInput'=>$textAreaInput], function ($m) {
             $m->to('yarno1998@gmail.com', 'Yarno Boelens')
                 ->subject('Someone filled in the contact form');
         });
