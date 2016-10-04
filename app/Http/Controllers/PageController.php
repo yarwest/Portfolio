@@ -17,6 +17,9 @@ class PageController extends Controller {
 	public function show($page)
 	{
 	    $page = str_replace('/', '.', $page);
+        if (! str_contains($page, 'pages')) {
+            $page = ($page === '.') ? 'pages.index' : sprintf('pages.%s', $page);
+        }
 		//then we make sure it exists in pages
 		if(!view()->exists($page)){
 			//doesnt exist abort oh nooooo
