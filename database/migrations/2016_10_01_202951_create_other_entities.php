@@ -21,6 +21,17 @@ class CreateOtherEntities extends Migration
                 $table->boolean('isLink')->default(false);
             });
         }
+
+        if(!Schema::hasTable('members')) {
+            Schema::create('members', function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('name')->unique();
+                $table->string('img_name');
+                $table->string('desc');
+                $table->string('website')->nullable();
+                $table->string('github');
+            });
+        }
     }
 
     /**
@@ -32,6 +43,9 @@ class CreateOtherEntities extends Migration
     {
         if(Schema::hasTable('site_meta')) {
             Schema::drop('site_meta');
+        }
+        if(Schema::hasTable('crew')) {
+            Schema::drop('crew');
         }
     }
 }
