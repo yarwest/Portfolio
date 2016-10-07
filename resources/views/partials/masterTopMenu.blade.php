@@ -15,10 +15,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li {!! Request::segment(2) === null ? 'class="active"' : '' !!}><a href="#" style="text-transform: capitalize">Dashboard</a></li>
-                <li {!! Request::segment(2)==='requests' ? 'class="active"' : '' !!}><a href="#">Requests</a></li>
-                <li {!! Request::segment(2)==='products' ? 'class="active"' : '' !!}><a href="#">Products</a></li>
-                <li {!! Request::segment(2)==='markets' ? 'class="active"' : '' !!}><a href="#">Markets</a></li>
-                <li {!! Request::segment(2)==='settings' ? 'class="active"' : '' !!}><a href="#">Settings</a></li>
+                <li {!! Request::segment(2)==='site_meta' ? 'class="active"' : '' !!}><a href="#">Site Meta</a></li>
+                <li {!! Request::segment(2)==='members' ? 'class="active"' : '' !!}><a href="#">Members</a></li>
                 <li><a href="/logout">Logout</a></li>
             </ul>
         </div>

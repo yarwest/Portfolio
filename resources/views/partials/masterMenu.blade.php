@@ -19,6 +19,12 @@
                     <p>Site Meta</p>
                 </a>
             </li>
+            <li class="{{ Request::segment(2) === 'members' ? 'active' : '' }}">
+                <a href="/admin/crew/">
+                    <i class="fa fa-map fa-lw"></i>
+                    <p>Site Meta</p>
+                </a>
+            </li>
             <li>
                 <a href="/logout">
                     <i class="fa fa-sign-out fa-lw"></i>

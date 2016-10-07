@@ -40,7 +40,13 @@ class PageController extends Controller {
                 view($page)->
                 with(compact('site_meta'));
                 break;
-			
+            case 'pages.crew':
+                $members = \App\Member::all();
+                return
+                view($page)->
+                with(['members'=>$members, compact('site_meta')]);
+                break;
+
 			default:
 				return view($page, compact('site_meta'));
 				break;
