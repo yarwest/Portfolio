@@ -11,6 +11,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <p>Insert story about the crew/collab whatever</p>
+                <p>Interested in joining this collaboration? New participants are always welcome, so head over to the <a href="/contact">contact page</a> and fill in the form!</p>
                 @foreach($members as $member)
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -23,7 +24,7 @@
                             {{$member->desc}}
                         </div>
                         <div class="panel-footer">
-                            Checkout his <a href="http://github.com/{{$member->github}}">Github page</a>
+                            Check out his <a href="http://github.com/{{$member->github}}">Github page</a>
                             @if(!is_null($member->website))
                                  and his <a href="{{$member->website}}">personal website</a>
                             @endif
