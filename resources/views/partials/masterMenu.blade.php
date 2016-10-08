@@ -22,7 +22,13 @@
             <li class="{{ Request::segment(2) === 'members' ? 'active' : '' }}">
                 <a href="/admin/crew/">
                     <i class="fa fa-map fa-lw"></i>
-                    <p>Site Meta</p>
+                    <p>Crew Members</p>
+                </a>
+            </li>
+            <li class="{{ Request::segment(2) === 'portfolio_items' ? 'active' : '' }}">
+                <a href="/admin/portfolio/">
+                    <i class="fa fa-map fa-lw"></i>
+                    <p>Portfolio Items</p>
                 </a>
             </li>
             <li>

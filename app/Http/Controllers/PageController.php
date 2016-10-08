@@ -47,6 +47,12 @@ class PageController extends Controller {
                 view($page)->
                 with(['members'=>$members, 'portfolio_items'=>$portfolio_items,compact('site_meta')]);
                 break;
+            case 'pages.portfolio':
+                $portfolio_items = \App\PortfolioItem::all();
+                return
+                    view($page)->
+                    with(['portfolio_items'=>$portfolio_items,compact('site_meta')]);
+                break;
 
 			default:
 				return view($page, compact('site_meta'));
