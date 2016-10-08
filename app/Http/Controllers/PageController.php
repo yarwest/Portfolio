@@ -42,9 +42,10 @@ class PageController extends Controller {
                 break;
             case 'pages.crew':
                 $members = \App\Member::all();
+                $portfolio_items = \App\PortfolioItem::where('compean_collab', 1)->orderBy('id', 'asc')->get(['name', 'link']);
                 return
                 view($page)->
-                with(['members'=>$members, compact('site_meta')]);
+                with(['members'=>$members, 'portfolio_items'=>$portfolio_items,compact('site_meta')]);
                 break;
 
 			default:

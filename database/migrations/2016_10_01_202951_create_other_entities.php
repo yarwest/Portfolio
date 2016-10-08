@@ -32,6 +32,17 @@ class CreateOtherEntities extends Migration
                 $table->string('github');
             });
         }
+
+        if(!Schema::hasTable('portfolio_items')) {
+            Schema::create('portfolio_items', function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('name')->unique();
+                $table->string('img_name')->nullable();
+                $table->string('desc')->nullable();
+                $table->string('link')->nullable();
+                $table->boolean('compean_collab')->default(false);
+            });
+        }
     }
 
     /**
@@ -44,8 +55,12 @@ class CreateOtherEntities extends Migration
         if(Schema::hasTable('site_meta')) {
             Schema::drop('site_meta');
         }
-        if(Schema::hasTable('crew')) {
-            Schema::drop('crew');
+        if(Schema::hasTable('members')) {
+            Schema::drop('members');
+        }
+
+        if(Schema::hasTable('portfolio_items')) {
+            Schema::drop('portfolio_items');
         }
     }
 }

@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(SiteMetaSeeder::class);
         $this->call(MemberSeeder::class);
+        $this->call(PortfolioSeeder::class);
     }
 }
 
@@ -87,6 +88,30 @@ class MemberSeeder extends Seeder
             'img_name'=>'derrek_bertrand.jpg',
             'desc'=>'The man, the myth, the legend.....',
             'github'=>'derrekbertrand'
+        ]);
+    }
+
+}
+
+class PortfolioSeeder extends Seeder
+{
+    /**
+     * Run the Portfolio seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        \App\PortfolioItem::create([
+            'name'=>'Compean and Sons website',
+            'link'=>'http://compeanandsons.com/',
+            'compean_collab'=>true
+        ]);
+
+        \App\PortfolioItem::create([
+            'name'=>'Laravel Eloquent Cart Package',
+            'link'=>'http://github.com/yarwest/',
+            'compean_collab'=>true
         ]);
     }
 
