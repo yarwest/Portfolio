@@ -31,7 +31,7 @@
                             @endif
                             {{$member->desc}}
                         </div>
-                        <div class="panel-footer">
+                        <div class="panel-footer panel-primary">
                             Check out his <a href="http://github.com/{{$member->github}}">Github page</a>
                             @if(!is_null($member->website))
                                  and his <a href="{{$member->website}}">personal website</a>

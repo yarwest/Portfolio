@@ -14,13 +14,13 @@
                 <div class="form-group">
                     <label for="nom" class="col-sm-4 control-label">Full Name</label>
                     <div class="col-sm-8">
-                        {{ Form::text('name',null,['class'=>'form-control','id'=>'name','placeholder'=>'Ex: Barry White', 'required'])}}
+                        {{ Form::text('name',null,['class'=>'form-control','id'=>'name','placeholder'=>'Ex: John Doe', 'required'])}}
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="email" class="col-sm-4 control-label">Email Address</label>
                     <div class="col-sm-8">
-                        {{ Form::email('email',null,['class'=>'form-control','id'=>'email','placeholder'=>'Ex: barry@gmail.com', 'required']) }}
+                        {{ Form::email('email',null,['class'=>'form-control','id'=>'email','placeholder'=>'Ex: john@gmail.com', 'required']) }}
                     </div>
                 </div>
                 <div class="form-group">
