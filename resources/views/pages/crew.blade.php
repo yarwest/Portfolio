@@ -21,7 +21,7 @@
                 @endif
                 <p>Interested in joining this collaboration? New participants are always welcome, so head over to the <a href="/contact">contact page</a> and fill in the form!</p>
                 @foreach($members as $member)
-                    <div class="panel panel-default">
+                    <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">{{$member->name}}</h3>
                         </div>
