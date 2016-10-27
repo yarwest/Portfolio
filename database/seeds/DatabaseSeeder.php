@@ -89,6 +89,14 @@ class MemberSeeder extends Seeder
             'desc'=>'The man, the myth, the legend.....',
             'github'=>'derrekbertrand'
         ]);
+        
+        \App\Member::create([
+            'name'=>'Tahnik Mustasin',
+            'img_name'=>'tahnik_mustasin.jpg',
+            'desc'=>'The dev with the most +1s on devRant',
+            'website'=>'http://www.tahnik.com/',
+            'github'=>'tahnik'
+        ]);
     }
 
 }
@@ -110,8 +118,14 @@ class PortfolioSeeder extends Seeder
 
         \App\PortfolioItem::create([
             'name'=>'Laravel Eloquent Cart Package',
-            'link'=>'http://github.com/yarwest/',
+            'link'=>'https://github.com/collab-corp/EloquentShoppingCart',
             'compean_collab'=>true
+        ]);
+        
+        \App\PortfolioItem::create([
+            'name'=>'This website',
+            'link'=>'http://yarwest.com/',
+            'compean_collab'=>false
         ]);
     }
 
