@@ -38,7 +38,7 @@ class CreateOtherEntities extends Migration
                 $table->increments('id');
                 $table->string('name')->unique();
                 $table->string('img_name')->nullable();
-                $table->string('desc')->nullable();
+                $table->text('desc')->nullable();
                 $table->string('link')->nullable();
                 $table->boolean('compean_collab')->default(false);
             });

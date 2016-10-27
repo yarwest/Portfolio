@@ -113,19 +113,21 @@ class PortfolioSeeder extends Seeder
         \App\PortfolioItem::create([
             'name'=>'Compean and Sons website',
             'link'=>'http://compeanandsons.com/',
+            'desc'=>'The Compean and Sons platform was created for the orchard bussiness owned by the family of Sergio Compean. This platform allows users to view all products, see at which markets these products will be available, and reserve products to pick up at a market of choosing.',
             'compean_collab'=>true
         ]);
 
         \App\PortfolioItem::create([
             'name'=>'Laravel Eloquent Cart Package',
             'link'=>'https://github.com/collab-corp/EloquentShoppingCart',
+            'desc'=>'Collab Corp decided to make this package after using a session based shopping cart package. We decided to work on this since we like working with Laravel and Eloquent, and we saw advantages of having a database based cart implementation (for example: viewing a cart on the same cart using multiple devices).',
             'compean_collab'=>true
         ]);
         
         \App\PortfolioItem::create([
             'name'=>'This website',
             'link'=>'http://yarwest.com/',
-            'compean_collab'=>false
+            'desc'=>'I made this website by myself using mostly Laravel'
         ]);
     }
 

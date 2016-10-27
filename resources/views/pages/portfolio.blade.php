@@ -12,10 +12,13 @@
             <div class="col-md-8 col-md-offset-2">
                 @if(count($portfolio_items) > 0)
                     @foreach($portfolio_items as $item)
-                        <h3>{{$item->name}}</h3>
-                        @if(!is_null($item->link))
-                            <a href="{{$item->link}}">Check out the project online</a>
-                        @endif
+                        <div class="well">
+                            <h3 style="margin-top:0px !important;">{{$item->name}}</h3>
+                            <p>{{$item->desc}}</p>
+                            @if(!is_null($item->link))
+                                <a href="{{$item->link}}">Check out the project online</a>
+                            @endif
+                        </div>
                     @endforeach
                 @endif
             </div>
