@@ -14,7 +14,7 @@
                     @foreach($portfolio_items as $item)
                         <div class="well">
                             <h3 style="margin-top:0px !important;">{{$item->name}}</h3>
-                            <p>{{$item->desc}}</p>
+                            <p>{!!$item->desc!!}</p>
                             @if(!is_null($item->link))
                                 <a href="{{$item->link}}">Check out the project online</a>
                             @endif
@@ -23,6 +23,5 @@
                 @endif
             </div>
         </div>
-    </div>
     </div>
 @endsection
