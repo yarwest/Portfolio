@@ -1,12 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.appWithoutHead')
 @section('title', '- Contact')
 @section('class', 'contact-page')
-@section('header')
-
-@endsection
 
 @section('content')
-    <div class="container">
+    <div class="container" style="margin-top:50px;">
         <h1 class="title text-center">Contact Me</h1>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
