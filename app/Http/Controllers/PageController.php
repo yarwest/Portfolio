@@ -32,30 +32,30 @@ class PageController extends Controller {
 
             case 'pages.index':
                 return
-                view($page)->
-				with(compact('site_meta'));
+                    view($page);
                 break;
             case 'pages.contact':
                 return
-                view($page)->
-                with(compact('site_meta'));
+                    view($page)->
+                    with(compact('site_meta'));
                 break;
             case 'pages.crew':
                 $members = \App\Member::all();
                 $portfolio_items = \App\PortfolioItem::where('compean_collab', 1)->orderBy('id', 'asc')->get(['name', 'link']);
                 return
-                view($page)->
-                with(['members'=>$members, 'portfolio_items'=>$portfolio_items,compact('site_meta')]);
+                    view($page)->
+                    with(['members'=>$members, 'portfolio_items'=>$portfolio_items]);
                 break;
             case 'pages.portfolio':
                 $portfolio_items = \App\PortfolioItem::all();
                 return
                     view($page)->
-                    with(['portfolio_items'=>$portfolio_items,compact('site_meta')]);
+                    with(compact('portfolio_items'));
                 break;
 
 			default:
-				return view($page, compact('site_meta'));
+				return
+                    view($page, compact('site_meta'));
 				break;
 		}
 
