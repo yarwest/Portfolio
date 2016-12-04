@@ -14,11 +14,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li class="{{ Request::segment(1) === '' || Request::segment(1) === 'index' ? 'active' : '' }}"><a href="/">Home</a></li>
+                <li class="{{ Request::segment(1) === null || Request::segment(1) === 'index' ? 'active' : '' }}"><a href="/">Home</a></li>
                 <li class="{{ Request::segment(1) === 'portfolio' ? 'active' : '' }}"><a href="/portfolio">Portfolio</a></li>
                 <li class="{{ Request::segment(1) === 'crew' ? 'active' : '' }}"><a href="/crew">The Crew</a></li>
                 <li class="{{ Request::segment(1) === 'contact' ? 'active' : '' }}"><a href="/contact">Contact</a></li>
-                <!--@if(Auth::check())
+                <?php /*@if(Auth::check())
 
                 @if(Auth::user()->isAdmin)
 
@@ -27,7 +27,7 @@
                 @else
                 <li class="{{ Request::segment(1) === 'login' ? 'active' : '' }}"><a href="/login"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
                 <li class="{{ Request::segment(1) === 'register' ? 'active' : '' }}"><a href="/register"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
-                @endif -->
+                @endif */ ?>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
