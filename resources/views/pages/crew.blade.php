@@ -24,7 +24,7 @@
                         </div>
                         <div class="panel-body">
                             @if(!is_null($member->img_name))
-                                <img src="/images/{{$member->img_name}}" alt="{{$member->name}}" style="float: left; margin-right: 15px" height="200" width="200">
+                                <img src="/images/crew/{{$member->img_name}}" alt="{{$member->name}}" style="float: left; margin-right: 15px" height="200" width="200">
                             @endif
                             {{$member->desc}}
                         </div>
