@@ -111,7 +111,6 @@ class PortfolioSeeder extends Seeder
     {
         \App\PortfolioItem::create([
             'name'=>'This website',
-            'link'=>'http://yarnoboelens.com/',
             'desc'=>'I made this website by myself using mostly Laravel and Bootstrap'
         ]);
         
