@@ -27,6 +27,13 @@
   @yield('header')
     
   <div class="page-content">
+      
+  <div id="overlay">
+        <a href="javascript:void(0)" id="button-close" onclick="closeOverlay()">&times;</a>
+        <div id="overlay-img-container">
+            <span id="overlay-img-helper"></span><img id="overlay-img">
+        </div>
+  </div>
 
     @yield('content')
   </div>
