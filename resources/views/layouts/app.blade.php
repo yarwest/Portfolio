@@ -24,9 +24,8 @@
   @include('partials.navbar')
 
 
-  <div class="page-header">
-        @yield('header')
-  </div>
+  @yield('header')
+    
   <div class="page-content">
 
     @yield('content')

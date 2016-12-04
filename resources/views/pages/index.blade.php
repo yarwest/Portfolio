@@ -2,6 +2,8 @@
 
 @section('class', 'home-page') {{-- Adds the class to the body, so we can change the style of the header depending on the current page --}}
 @section('header')
+
+  <div class="page-header">
     <div class="container">
 
         <div class="row">
@@ -10,6 +12,7 @@
             </div>
         </div>
     </div>
+  </div>
 
 
 

@@ -1,4 +1,4 @@
-@extends('layouts.appWithoutHead')
+@extends('layouts.app')
 @section('title', '- Contact')
 @section('class', 'contact-page')
 
