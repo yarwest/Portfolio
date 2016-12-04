@@ -27,7 +27,7 @@ class CreateOtherEntities extends Migration
                 $table->increments('id');
                 $table->string('name')->unique();
                 $table->string('img_name');
-                $table->string('desc');
+                $table->mediumText('desc');
                 $table->string('website')->nullable();
                 $table->string('github');
             });
@@ -37,8 +37,7 @@ class CreateOtherEntities extends Migration
             Schema::create('portfolio_items', function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('name')->unique();
-                $table->string('img_name')->nullable();
-                $table->text('desc')->nullable();
+                $table->mediumText('desc')->nullable();
                 $table->string('link')->nullable();
                 $table->boolean('compean_collab')->default(false);
             });
