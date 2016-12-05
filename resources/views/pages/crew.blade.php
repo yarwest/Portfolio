@@ -3,7 +3,7 @@
 @section('class', 'crew-page')
 
 @section('content')
-    <div class="container" style="margin-top:50px;">
+    <div class="container" style="margin-top:50px; margin-bottom: 20px;">
         <h1 class="title text-center">The Crew</h1>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -38,6 +38,5 @@
                 @endforeach
             </div>
         </div>
-    </div>
     </div>
 @endsection
