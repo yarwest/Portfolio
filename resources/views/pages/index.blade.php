@@ -8,7 +8,7 @@
 
         <div class="row">
             <div class="col-md-6 col-md-offset-3 thumbnail text-center"  id="pickup-thumbnail">
-                <img src="images/yarwest_logo.png" alt="Yarwest Logo" class="img-responsive center-block">
+                <img src="images/yarwest_logo.svg" style="height:150px !important;" alt="Yarwest Logo" class="img-responsive center-block">
             </div>
         </div>
     </div>
