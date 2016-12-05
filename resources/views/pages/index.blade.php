@@ -21,8 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h4>About me</h4>
-                <p>Welcome!</p>
+                <h4>Welcome!</h4>
                 <p>My name is Yarno Boelens and I am a computer science student.<br>
                     I am very passionate about software development and I am always thinking up new projects to work on.<br>
                     To me, the most important thing about the products that I make is the quality of both the functionality and the code itself<br>

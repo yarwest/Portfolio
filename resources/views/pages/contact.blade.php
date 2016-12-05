@@ -7,6 +7,7 @@
         <h1 class="title text-center">Contact Me</h1>
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center">
+                <p style="margin-bottom: 15px;">Feel free to contact me using the form below or any of the other methods listed here :)</p>
                 @foreach($site_meta as $data)
                     @if($data->isLink)
                         <p><a href="{{$data->value}}">{{$data->name}}</a></p>
