@@ -24,7 +24,7 @@
                 <h4>Welcome!</h4>
                 <p>My name is Yarno Boelens and I am a computer science student.<br>
                     I am very passionate about software development and I am always thinking up new projects to work on.<br>
-                    To me, the most important thing about the products that I make is the quality of both the functionality and the code itself<br>
+                    To me, the most important thing about the products that I make is the quality of both the functionality and the code itself.<br>
                     I regularly work with (amongst others):</p>
                 <ul>
                     <li>PHP <i class="fa fa-server" aria-hidden="true"></i> (Laravel)</li>
@@ -35,7 +35,7 @@
                     <li>HTML5 <i class="fa fa-html5" aria-hidden="true"></i> CSS3 <i class="fa fa-css3" aria-hidden="true"></i> Bootstrap and SASS</li>
                 </ul>
                 <p>Aside from that I am very passionate about traveling, languages and snowboarding.</p>
-                
+
                 <h4>What can I do for you?</h4>
                 <p>One of the best ways of getting your brand, product or concepts known to the public is trough a website. I am able to create and deploy a promotional web application using a variety of modern web technologies.</p>
                 <p>More complex web or desktop applications are something I am very passionate about, the requirements and specifications of which are something that can always be discussed.</p>
