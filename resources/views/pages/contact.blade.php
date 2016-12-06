@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="text-right">
-                    {{ Form::submit('Send', ['class'=>'btn btn-success btn-raised']) }}
+                    {{ Form::submit('Send', ['class'=>'btn btn-primary btn-raised']) }}
                 </div>
                 {{ Form::close() }}
 
