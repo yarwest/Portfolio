@@ -9,7 +9,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <p>The crew, also referred to as Collab Corp, is a group of passionate web developers that love developing websites, web applications and packages together. The group originated on devRant when Sergio Compean requested help with the website for his fathers orchard business.</p>
                 @if(count($portfolio_items) > 0)
-                    <p>So far Collab Corp has developed the following:</p>
+                    <p>So far Collab Corp has developed (or is working on) the following:</p>
                     <ul>
                         @foreach($portfolio_items as $item)
                             <li><a href="{{$item->link}}">{{$item->name}}</a></li>
