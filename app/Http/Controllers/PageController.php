@@ -60,9 +60,9 @@ class PageController extends Controller {
 		}
 
 		//take them there
-		
-	
-	
+
+
+
 	}
 
     public function send(Request $request) {
@@ -70,13 +70,18 @@ class PageController extends Controller {
         $email = $request->input('email');
         $textAreaInput = $request->input('message');
 
-        Mail::send('emails.form', ['name'=>$name, 'email'=>$email, 'textAreaInput'=>$textAreaInput], function ($m) {
-            $m->to('yarno1998@gmail.com', 'Yarno Boelens')
-                ->subject('Someone filled in the contact form');
-        });
+		if($request->input('birthday') == null){
+	        Mail::send('emails.form', ['name'=>$name, 'email'=>$email, 'textAreaInput'=>$textAreaInput], function ($m) {
+	            $m->to('yarno1998@gmail.com', 'Yarno Boelens')
+	                ->subject('Someone filled in the contact form');
+	        });
 
-        session()->flash('message', 'Successfully send your message');
-        session()->flash('alert-class', 'alert-success');
+	        session()->flash('message', 'Successfully send your message');
+	        session()->flash('alert-class', 'alert-success');
+		} else {
+			session()->flash('message', 'Fucking bot');
+	        session()->flash('alert-class', 'alert-danger');
+		}
 
         return redirect()->back();
     }

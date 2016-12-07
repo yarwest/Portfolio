@@ -26,6 +26,12 @@
                         {{ Form::text('name',null,['class'=>'form-control','id'=>'name','placeholder'=>'Ex: John Doe', 'required'])}}
                     </div>
                 </div>
+                <div class="form-group" style="display:none;">
+                    <label for="birthday" class="col-xs-4 control-label">Birthday</label>
+                    <div class="col-xs-7">
+                        {{ Form::text('birthday',null,['class'=>'form-control','id'=>'birthday','placeholder'=>'Ex:'])}}
+                    </div>
+                </div>
                 <div class="form-group">
                     <label for="email" class="col-xs-4 control-label">Email Address</label>
                     <div class="col-xs-7">
