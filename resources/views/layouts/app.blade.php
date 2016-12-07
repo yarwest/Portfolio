@@ -25,9 +25,9 @@
 
 
   @yield('header')
-    
+
   <div class="page-content">
-      
+
   <div id="overlay">
         <a href="javascript:void(0)" id="button-close" onclick="closeOverlay()">&times;</a>
         <div id="overlay-img-container">
@@ -65,6 +65,16 @@
             css.type = 'text/css';
             document.getElementsByTagName('head')[0].appendChild(css);
         })();
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-88644309-1', 'auto');
+        ga('send', 'pageview');
+
     </script>
 
     <!-- Scripts -->
