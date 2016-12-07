@@ -7,8 +7,8 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-6 col-md-offset-3 thumbnail text-center"  id="pickup-thumbnail">
-                <img src="images/yarwest_logo.svg" style="height:150px !important;" alt="Yarwest Logo" class="img-responsive center-block">
+            <div class="col-md-2 col-md-offset-5 thumbnail text-center">
+                <img src="images/yarwest_logo.jpg" style="height:150px !important;" alt="Yarwest Logo" class="img-responsie center-block">
             </div>
         </div>
     </div>
@@ -39,9 +39,9 @@
                 <h4>What can I do for you?</h4>
                 <p>One of the best ways of getting your brand, product or concepts known to the public is trough a website. I am able to create and deploy a promotional web application using a variety of modern web technologies.</p>
                 <p>More complex web or desktop applications are something I am very passionate about, the requirements and specifications of which are something that can always be discussed.</p>
-                <p>To find out more, fill in the <a href="/contact">contact form</a></p>
+                <p>To find out more about the options, fill in the <a href="/contact">contact form</a></p>
                 <div id="button-container" style="text-align: center;">
-                    <a href="/resume.pdf" class="btn btn-primary btn-raised">Click here to see my (dutch) resume</a>
+                    <a href="/resume.pdf" class="btn btn-primary btn-raised">Click here to see my resume</a>
                 </div>
             </div>
         </div>
