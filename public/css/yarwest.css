@@ -10160,7 +10160,7 @@ footer ul li a {
     display: none;
     <!--[if IE]>
         background:transparent;
-        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF181717,endColorstr=#BF181717); 
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF181717,endColorstr=#BF181717);
         zoom: 1;
     <![endif]-->
 }
@@ -10194,7 +10194,7 @@ footer ul li a {
     text-decoration: none;
     font-size: 60px;
     color: #818181;
-    display: block; 
+    display: block;
     transition: 0.3s;
 }
 
