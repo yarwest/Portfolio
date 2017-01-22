@@ -41,7 +41,10 @@
                 <p>More complex web or desktop applications are something I am very passionate about, the requirements and specifications of which are something that can always be discussed.</p>
                 <p>To find out more about the options, fill in the <a href="/contact">contact form</a></p>
                 <div id="button-container" style="text-align: center;">
-                    <a href="/resume.pdf" class="btn btn-primary btn-raised">Click here to see my resume</a>
+                    <a href="/resume.pdf" class="btn btn-primary btn-raised">
+                        Click here to see my<br>
+                        Dutch resume
+                    </a>
                 </div>
             </div>
         </div>
