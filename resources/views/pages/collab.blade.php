@@ -1,13 +1,13 @@
 @extends('layouts.app')
-@section('title', '- The Crew')
+@section('title', '- Collab Corp')
 @section('class', 'crew-page')
 
 @section('content')
     <div class="container" style="margin-top:50px; margin-bottom: 20px;">
-        <h1 class="title text-center">The Crew</h1>
+        <h1 class="title text-center">Collab Corp</h1>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <p>The crew, also referred to as Collab Corp, is a group of passionate web developers that love developing websites, web applications and packages together. The group originated on devRant when Sergio Compean requested help with the website for his fathers orchard business.</p>
+                <p>Collab Corp is a group of passionate web developers that love developing websites, web applications and packages together. The group originated on devRant when Sergio Compean requested help with the website for his fathers orchard business.</p>
                 @if(count($portfolio_items) > 0)
                     <p>So far Collab Corp has developed (or is working on) the following:</p>
                     <ul>
