@@ -39,13 +39,13 @@ class PageController extends Controller {
                     view($page)->
                     with(compact('site_meta'));
                 break;
-            case 'pages.collab':
+            /*case 'pages.collab':
                 $members = \App\Member::all();
                 $portfolio_items = \App\PortfolioItem::where('compean_collab', 1)->orderBy('id', 'asc')->get(['name', 'link']);
                 return
                     view($page)->
                     with(['members'=>$members, 'portfolio_items'=>$portfolio_items]);
-                break;
+                break;*/
             case 'pages.portfolio':
                 $portfolio_items = \App\PortfolioItem::all();
                 return

@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(SiteMetaSeeder::class);
-        $this->call(MemberSeeder::class);
+        //$this->call(MemberSeeder::class);
         $this->call(PortfolioSeeder::class);
     }
 }
@@ -125,12 +125,12 @@ class PortfolioSeeder extends Seeder
             'desc'=>'<img src="/images/portfolio/lpl_pro.png" onclick="openOverlay(\'lpl_pro.png\')" alt="LPL Pro" style="width:100%;"><p>LPL Pro is a place to view information about loading stations for electric vehicles. This platform consists of a map (made using the <a href="http://leafletjs.com/">Leaflet</a> JavaScript Library) that shows the loading stations and graphs with statistics for all the loading stations within a certain area or an indiviual station. It is possible to filter the map and the graphs on station operators, regions (cities or municipalities) and a time period (up to 2 years back).</p><p>This web application was created by RanIT, which was a project group during my computer science course. The aim of this project was to process and provide usage information of loading stations to municipalities and loading station operators, these parties will use this information to decide where to place or remove loading stations.</p><p>This project was created using jQuery, Bootstrap and SASS for the front-end, and Java and MySQL for the back-end.</p><p>I was/am responsible for a number of AJAX calls and front end integration of the retrieved data, creating certain parts of the RESTful Java application, aswell as various designing and styling tasks.</p>'
         ]);
 
-        \App\PortfolioItem::create([
+        /*\App\PortfolioItem::create([
             'name'=>'Laravel Eloquent Cart Package',
             'link'=>'https://github.com/collab-corp/EloquentShoppingCart',
             'desc'=>'<p>Collab Corp decided to make this package after using a session based shopping cart package. We decided to work on this since we like working with Laravel and Eloquent, and we saw advantages of having a database based cart implementation (for example: viewing a cart on the same account using multiple devices).</p>',
             'compean_collab'=>true
-        ]);
+        ]);/
 
         \App\PortfolioItem::create([
             'name'=>'Compean and Sons website',
