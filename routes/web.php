@@ -26,4 +26,7 @@ Route::group(['middleware'  =>  ['auth']], function () {
 
 //any other page in pages
 Route::post('/contact/send', 'PageController@send');
+Route::get('/soundboard', function(){
+    return File::get(public_path().'/SoundBoard/web/index.html');
+});
 Route::get('/{page?}', 'PageController@show')->where('page','.*');
