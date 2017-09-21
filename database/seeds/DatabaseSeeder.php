@@ -130,7 +130,7 @@ class PortfolioSeeder extends Seeder
             'link'=>'https://github.com/collab-corp/EloquentShoppingCart',
             'desc'=>'<p>Collab Corp decided to make this package after using a session based shopping cart package. We decided to work on this since we like working with Laravel and Eloquent, and we saw advantages of having a database based cart implementation (for example: viewing a cart on the same account using multiple devices).</p>',
             'compean_collab'=>true
-        ]);/
+        ]);*/
 
         \App\PortfolioItem::create([
             'name'=>'Compean and Sons website',
