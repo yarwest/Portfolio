@@ -1,0 +1,3 @@
+[submodule "public/SoundBoard"]
+	path = public/SoundBoard
+	url = https://github.com/yarwest/SoundBoard
