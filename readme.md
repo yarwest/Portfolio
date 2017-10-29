@@ -1,4 +1,4 @@
-#Steps to get this shit working
+# Steps to get this platform working
 PHP dependencies
 ```composer install```
 
