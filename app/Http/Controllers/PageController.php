@@ -11,6 +11,12 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller {
 
+	public function blog($blog) {
+		$blog_posts = \App\BlogPost::where('blog', $blog)->get();
+		return
+			view('pages.blog_posts')->
+			with(['blog'=>$blog, 'blog_posts'=>$blog_posts]);
+	}
 
 	//the magical method
 	public function show($page)
@@ -59,9 +65,6 @@ class PageController extends Controller {
 		}
 
 		//take them there
-
-
-
 	}
 
     public function send(Request $request) {
