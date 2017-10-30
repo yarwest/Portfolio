@@ -16,7 +16,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="{{ Request::segment(1) === null || Request::segment(1) === 'index' ? 'active' : '' }}"><a href="/">Home</a></li>
                 <li class="{{ Request::segment(1) === 'portfolio' ? 'active' : '' }}"><a href="/portfolio">Portfolio</a></li>
-                <!--<li class="{{ Request::segment(1) === 'collab' ? 'active' : '' }}"><a href="/collab">Collab Corp</a></li>-->
+                <li class="{{ Request::segment(1) === 'blog' ? 'active' : '' }}"><a href="/blog">Blog</a></li>
                 <li class="{{ Request::segment(1) === 'contact' ? 'active' : '' }}"><a href="/contact">Contact</a></li>
                 <?php /*@if(Auth::check())
 

@@ -16,7 +16,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li {!! Request::segment(2) === null ? 'class="active"' : '' !!}><a href="#" style="text-transform: capitalize">Dashboard</a></li>
                 <li {!! Request::segment(2)==='site_meta' ? 'class="active"' : '' !!}><a href="#">Site Meta</a></li>
-                <li {!! Request::segment(2)==='members' ? 'class="active"' : '' !!}><a href="#">Crew Members</a></li>
+                <li {!! Request::segment(2)==='blogs' ? 'class="active"' : '' !!}><a href="#">Blogs</a></li>
                 <li {!! Request::segment(2)==='portfolio_items' ? 'class="active"' : '' !!}><a href="#">Portfolio Items</a></li>
                 <li><a href="/logout">Logout</a></li>
             </ul>

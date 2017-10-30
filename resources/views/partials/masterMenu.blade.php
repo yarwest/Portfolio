@@ -19,10 +19,10 @@
                     <p>Site Meta</p>
                 </a>
             </li>
-            <li class="{{ Request::segment(2) === 'members' ? 'active' : '' }}">
-                <a href="/admin/crew/">
+            <li class="{{ Request::segment(2) === 'blog' ? 'active' : '' }}">
+                <a href="/admin/blog/">
                     <i class="fa fa-map fa-lw"></i>
-                    <p>Crew Members</p>
+                    <p>Blogs</p>
                 </a>
             </li>
             <li class="{{ Request::segment(2) === 'portfolio_items' ? 'active' : '' }}">
