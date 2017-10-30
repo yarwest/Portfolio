@@ -22,17 +22,6 @@ class CreateOtherEntities extends Migration
             });
         }
 
-        if(!Schema::hasTable('members')) {
-            Schema::create('members', function (Blueprint $table) {
-                $table->increments('id');
-                $table->string('name')->unique();
-                $table->string('img_name');
-                $table->mediumText('desc');
-                $table->string('website')->nullable();
-                $table->string('github');
-            });
-        }
-
         if(!Schema::hasTable('portfolio_items')) {
             Schema::create('portfolio_items', function (Blueprint $table) {
                 $table->increments('id');
@@ -53,9 +42,6 @@ class CreateOtherEntities extends Migration
     {
         if(Schema::hasTable('site_meta')) {
             Schema::drop('site_meta');
-        }
-        if(Schema::hasTable('members')) {
-            Schema::drop('members');
         }
 
         if(Schema::hasTable('portfolio_items')) {

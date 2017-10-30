@@ -12,7 +12,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(SiteMetaSeeder::class);
-        //$this->call(MemberSeeder::class);
         $this->call(PortfolioSeeder::class);
     }
 }
@@ -51,55 +50,6 @@ class SiteMetaSeeder extends Seeder
 
 }
 
-class MemberSeeder extends Seeder
-{
-    /**
-     * Run the Member seeds.
-     *
-     * @return void
-     */
-    public function run()
-    {
-        \App\Member::create([
-            'name'=>'Sergio Compean',
-            'img_name'=>'sergio_compean.jpg',
-            'desc'=>"Sergio Compean, is a Laravel/PHP enthusiast, who enjoys web development all the way from front end to back end ;) In his spare time he enjoys watching anime, learning new technologies, and playing video games. Sergio enjoys development so much, that he spends most of his nights researching new technologies or finding new projects to get involved in. As a result of this passion, he  became a founder of this collaboration group, Collab Corp. What started as a collaboration for help on one of his personal projects turned into creating a group where multiple new projects could be made a reality. He's only kinda cool and tends to wear mismatching socks, but that only means hes having a great day.",
-            'github'=>'surgiie'
-        ]);
-
-        \App\Member::create([
-            'name'=>'Oussama Bennaci',
-            'img_name'=>'oussama_bennaci.jpg',
-            'desc'=>'The man that is responsible for nearly all of the amazing visuals that you see, and much more',
-            'website'=>'http://oussamabennaci.com/',
-            'github'=>'Gostwow'
-        ]);
-
-        \App\Member::create([
-            'name'=>'Jonas Hansen',
-            'img_name'=>'jonas_hansen.jpg',
-            'desc'=>'Basically, a walking fortress and library. Looking for anything Linux related or amazing feature/technologies? this is your man!',
-            'github'=>'sasin91'
-        ]);
-
-        \App\Member::create([
-            'name'=>'Derrek Bertrand',
-            'img_name'=>'derrek_bertrand.jpg',
-            'desc'=>'The man, the myth, the legend.....',
-            'github'=>'derrekbertrand'
-        ]);
-
-        \App\Member::create([
-            'name'=>'Tahnik Mustasin',
-            'img_name'=>'tahnik_mustasin.jpg',
-            'desc'=>"His goal in my life is to become a software engineer. Tahnik like to be confident about what he is doing and also tries to manage his time properly. To Tahnik time management is the most important aspect of someone's life. Along with time management, a professional attitude and behavior is what makes a person perfect. That is what he strives to be. He is always creating new project ideas and he intends to lead or manage these projects. Tahnik is always learning new technologies. To summarize, Tahnik is the kind of person who would like to be professional, wants to take the lead, provide better idea, have a professional attitude and have better time management.",
-            'website'=>'http://www.tahnik.com/',
-            'github'=>'tahnik'
-        ]);
-    }
-
-}
-
 class PortfolioSeeder extends Seeder
 {
     /**
@@ -111,6 +61,7 @@ class PortfolioSeeder extends Seeder
     {
         \App\PortfolioItem::create([
             'name'=>'This website',
+            'link'=>'https://github.com/yarwest/Portfolio',
             'desc'=>'<p>I made this website by myself using mostly Laravel and Bootstrap</p>'
         ]);
 
@@ -124,13 +75,6 @@ class PortfolioSeeder extends Seeder
             'name'=>'LPL Pro',
             'desc'=>'<img src="/images/portfolio/lpl_pro.png" onclick="openOverlay(\'lpl_pro.png\')" alt="LPL Pro" style="width:100%;"><p>LPL Pro is a place to view information about loading stations for electric vehicles. This platform consists of a map (made using the <a href="http://leafletjs.com/">Leaflet</a> JavaScript Library) that shows the loading stations and graphs with statistics for all the loading stations within a certain area or an indiviual station. It is possible to filter the map and the graphs on station operators, regions (cities or municipalities) and a time period (up to 2 years back).</p><p>This web application was created by RanIT, which was a project group during my computer science course. The aim of this project was to process and provide usage information of loading stations to municipalities and loading station operators, these parties will use this information to decide where to place or remove loading stations.</p><p>This project was created using jQuery, Bootstrap and SASS for the front-end, and Java and MySQL for the back-end.</p><p>I was/am responsible for a number of AJAX calls and front end integration of the retrieved data, creating certain parts of the RESTful Java application, aswell as various designing and styling tasks.</p>'
         ]);
-
-        /*\App\PortfolioItem::create([
-            'name'=>'Laravel Eloquent Cart Package',
-            'link'=>'https://github.com/collab-corp/EloquentShoppingCart',
-            'desc'=>'<p>Collab Corp decided to make this package after using a session based shopping cart package. We decided to work on this since we like working with Laravel and Eloquent, and we saw advantages of having a database based cart implementation (for example: viewing a cart on the same account using multiple devices).</p>',
-            'compean_collab'=>true
-        ]);*/
 
         \App\PortfolioItem::create([
             'name'=>'Compean and Sons website',

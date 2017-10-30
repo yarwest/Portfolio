@@ -39,13 +39,6 @@ class PageController extends Controller {
                     view($page)->
                     with(compact('site_meta'));
                 break;
-            /*case 'pages.collab':
-                $members = \App\Member::all();
-                $portfolio_items = \App\PortfolioItem::where('compean_collab', 1)->orderBy('id', 'asc')->get(['name', 'link']);
-                return
-                    view($page)->
-                    with(['members'=>$members, 'portfolio_items'=>$portfolio_items]);
-                break;*/
             case 'pages.portfolio':
                 $portfolio_items = \App\PortfolioItem::all();
                 return
@@ -72,7 +65,7 @@ class PageController extends Controller {
 
 		if($request->input('birthday') == null){
 	        Mail::send('emails.form', ['name'=>$name, 'email'=>$email, 'textAreaInput'=>$textAreaInput], function ($m) {
-	            $m->to('yarno1998@gmail.com', 'Yarno Boelens')
+	            $m->to('yarnoboelens@gmail.com', 'Yarno Boelens')
 	                ->subject('Someone filled in the contact form');
 	        });
 
