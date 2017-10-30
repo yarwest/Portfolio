@@ -42,6 +42,9 @@ class CreateOtherEntities extends Migration
             Schema::create('blog_posts', function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('title');
+                $table->string('blog');
+                $table->foreign('blog')
+                    ->references('name')->on('blogs');
                 $table->mediumText('body');
             });
         }
@@ -60,6 +63,17 @@ class CreateOtherEntities extends Migration
 
         if(Schema::hasTable('portfolio_items')) {
             Schema::drop('portfolio_items');
+        }
+
+        if(Schema::hasTable('blogs')) {
+            Schema::drop('blogs');
+        }
+
+        if(Schema::hasTable('blog_posts')) {
+            Schema::table('blog_posts', function (Blueprint $table) {
+                $table->dropForeign(['blog']);
+            });
+            Schema::drop('blog_posts');
         }
     }
 }

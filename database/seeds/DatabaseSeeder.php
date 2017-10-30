@@ -110,16 +110,19 @@ class BlogSeeder extends Seeder
 
         \App\BlogPost::create([
             'title'=>'Typing',
+            'blog'=>'Scala',
             'body'=>'<p>Blog about typing</p>'
         ]);
 
         \App\BlogPost::create([
             'title'=>'Variables',
+            'blog'=>'Scala',
             'body'=>'<p>Blog about variables</p>'
         ]);
 
         \App\BlogPost::create([
             'title'=>'Functions',
+            'blog'=>'Scala',
             'body'=>'<p>Blog about functions</p>'
         ]);
 
