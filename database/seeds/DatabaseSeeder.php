@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(SiteMetaSeeder::class);
         $this->call(PortfolioSeeder::class);
+        $this->call(BlogSeeder::class);
     }
 }
 
@@ -47,7 +48,6 @@ class SiteMetaSeeder extends Seeder
             'value'=>'0031 642498359'
         ]);
     }
-
 }
 
 class PortfolioSeeder extends Seeder
@@ -79,8 +79,7 @@ class PortfolioSeeder extends Seeder
         \App\PortfolioItem::create([
             'name'=>'Compean and Sons website',
             'link'=>'https://github.com/surgiie/compean',
-            'desc'=>'<div style="text-align:center;"><img src="/images/portfolio/compean_sons1.png" onclick="openOverlay(\'compean_sons1.png\')" alt="Compean and Sons" style="width:50%;"></div><p>The Compean and Sons platform was created for the orchard bussiness owned by the family of Sergio Compean. This platform allows users to view all products, see at which markets these products will be available, and reserve products to pick up at a market of choosing.<br>The project is build using Laravel, Bootstrap, SASS and jQuery.</p><p>During this project I worked/am working on the various sections of the admin panel in combination with the related CRUD tasks, the integration of the <a href="https://github.com/Trexology/laravel-pointable">Pointable package</a> to reward users for placing orders and referrals by giving them points which they can use for a discount, and lastly parts of the checkout process.</p><div style="text-align:center;"><img src="/images/portfolio/compean_sons2.png" onclick="openOverlay(\'compean_sons2.png\')" alt="Compean and Sons" style="width:50%;"></div>',
-            'compean_collab'=>true
+            'desc'=>'<div style="text-align:center;"><img src="/images/portfolio/compean_sons1.png" onclick="openOverlay(\'compean_sons1.png\')" alt="Compean and Sons" style="width:50%;"></div><p>The Compean and Sons platform was created for the orchard bussiness owned by the family of Sergio Compean. This platform allows users to view all products, see at which markets these products will be available, and reserve products to pick up at a market of choosing.<br>The project is build using Laravel, Bootstrap, SASS and jQuery.</p><p>During this project I worked/am working on the various sections of the admin panel in combination with the related CRUD tasks, the integration of the <a href="https://github.com/Trexology/laravel-pointable">Pointable package</a> to reward users for placing orders and referrals by giving them points which they can use for a discount, and lastly parts of the checkout process.</p><div style="text-align:center;"><img src="/images/portfolio/compean_sons2.png" onclick="openOverlay(\'compean_sons2.png\')" alt="Compean and Sons" style="width:50%;"></div>'
         ]);
 
         \App\PortfolioItem::create([
@@ -93,5 +92,39 @@ class PortfolioSeeder extends Seeder
             'desc'=>'<img src="/images/portfolio/classwork_register.png" onclick="openOverlay(\'classwork_register.png\')" alt="Classwork" style="width:100%;"><p>Classwork is a project that I created for a freelance client using plain PHP and Bootstrap. The platform is used for schools, where teachers can create classes and generate attendance codes. The students can register for a class and fill in one of the codes to prove their attendance. There is also an option for the students to send a ticket to the teacher when they did not receive a code. Both accounts can be registered and teacher accounts have to be approved by an admin.</p><img src="/images/portfolio/classwork_generate.png" onclick="openOverlay(\'classwork_generate.png\')" alt="Classwork Generate Codes" style="width:47.5%; margin-right:5%;"><img src="/images/portfolio/classwork_codes.png" onclick="openOverlay(\'classwork_codes.png\')" alt="Classwork Codes" style="width:47.5%;">'
         ]);
     }
+}
 
+class BlogSeeder extends Seeder
+{
+    /**
+     * Run the Portfolio seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        \App\Blog::create([
+            'name'=>'Scala',
+            'desc'=>'<p>The Java based bridge between the OO and functional paradigms.</p>'
+        ]);
+
+        \App\BlogPost::create([
+            'title'=>'Typing',
+            'body'=>'<p>Blog about typing</p>'
+        ]);
+
+        \App\BlogPost::create([
+            'title'=>'Variables',
+            'body'=>'<p>Blog about variables</p>'
+        ]);
+
+        \App\BlogPost::create([
+            'title'=>'Functions',
+            'body'=>'<p>Blog about functions</p>'
+        ]);
+
+        \App\Blog::create([
+            'name'=>'Prolog'
+        ]);
+    }
 }

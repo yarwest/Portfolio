@@ -39,6 +39,12 @@ class PageController extends Controller {
                     view($page)->
                     with(compact('site_meta'));
                 break;
+			case 'pages.blog':
+				$blogs = \App\Blog::all();
+				return
+					view($page)->
+					with(compact('blogs'));
+                break;
             case 'pages.portfolio':
                 $portfolio_items = \App\PortfolioItem::all();
                 return

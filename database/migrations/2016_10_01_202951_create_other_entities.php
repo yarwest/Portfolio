@@ -28,7 +28,21 @@ class CreateOtherEntities extends Migration
                 $table->string('name')->unique();
                 $table->mediumText('desc')->nullable();
                 $table->string('link')->nullable();
-                $table->boolean('compean_collab')->default(false);
+            });
+        }
+
+        if(!Schema::hasTable('blogs')) {
+            Schema::create('blogs', function (Blueprint $table) {
+                $table->string('name')->unique();
+                $table->mediumText('desc')->nullable();
+            });
+        }
+
+        if(!Schema::hasTable('blog_posts')) {
+            Schema::create('blog_posts', function (Blueprint $table) {
+                $table->increments('id');
+                $table->string('title');
+                $table->mediumText('body');
             });
         }
     }
