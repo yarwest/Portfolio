@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', '- {{$blog}}')
+@section('title', '- Blog')
 @section('class', 'blog-page')
 
 @section('content')
