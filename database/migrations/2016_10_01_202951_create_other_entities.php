@@ -65,15 +65,15 @@ class CreateOtherEntities extends Migration
             Schema::drop('portfolio_items');
         }
 
-        if(Schema::hasTable('blogs')) {
-            Schema::drop('blogs');
-        }
-
         if(Schema::hasTable('blog_posts')) {
             Schema::table('blog_posts', function (Blueprint $table) {
                 $table->dropForeign(['blog']);
             });
             Schema::drop('blog_posts');
+        }
+
+        if(Schema::hasTable('blogs')) {
+            Schema::drop('blogs');
         }
     }
 }

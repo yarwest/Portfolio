@@ -10209,3 +10209,9 @@ footer ul li a {
         right: 35px;
     }
 }
+
+.code {
+    font-family: Courier, 'New Courier', monospace;
+    font-size: 12px;
+    background-color: grey;
+}
