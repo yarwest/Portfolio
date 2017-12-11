@@ -46,6 +46,7 @@
                         Dutch resume
                     </a>
                 </div>
+                <p style="text-align: center">(Resume based on <a href="https://gumroad.com/l/resumecousteau">The Cousteau</a> by Amy Dozier)</p>
             </div>
         </div>
         <br>
