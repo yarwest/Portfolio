@@ -54,7 +54,7 @@ class PageController extends Controller {
 		//take them there
 	}
 
-    public function send(Request $request) {
+    /*public function send(Request $request) {
         $name = $request->input('name');
         $email = $request->input('email');
         $textAreaInput = $request->input('message');
@@ -73,5 +73,5 @@ class PageController extends Controller {
 		}
 
         return redirect()->back();
-    }
+    }*/
 }

@@ -39,7 +39,7 @@
                 <h4>What can I do for you?</h4>
                 <p>One of the best ways of getting your brand, product or concepts known to the public is trough a website. I am able to create and deploy a promotional web application using a variety of modern web technologies.</p>
                 <p>More complex web or desktop applications are something I am very passionate about, the requirements and specifications of which are something that can always be discussed.</p>
-                <p>To find out more about the options, fill in the <a href="/contact">contact form</a></p>
+                <p>To find out more about the options, reach out to me through one of the ways mentioned on the <a href="/contact">contact page</a>.</p>
                 <div id="button-container" style="text-align: center;">
                     <a href="/resume.pdf" class="btn btn-primary btn-raised">
                         Click here to see my<br>
