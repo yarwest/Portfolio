@@ -32,5 +32,4 @@ Route::get('/soundboard', function(){
 Route::get('/Soundboard', function(){
     return File::get(public_path().'/SoundBoard/web/index.html');
 });
-Route::get('/blog/{blog}', 'PageController@blog');
 Route::get('/{page?}', 'PageController@show')->where('page','.*');

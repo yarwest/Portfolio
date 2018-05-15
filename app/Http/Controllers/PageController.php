@@ -11,13 +11,6 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller {
 
-	public function blog($blog) {
-		$blog_posts = \App\BlogPost::where('blog', $blog)->get();
-		return
-			view('pages.blog_posts')->
-			with(['blog'=>$blog, 'blog_posts'=>$blog_posts]);
-	}
-
 	//the magical method
 	public function show($page)
 	{
@@ -44,12 +37,6 @@ class PageController extends Controller {
                 return
                     view($page)->
                     with(compact('site_meta'));
-                break;
-			case 'pages.blog':
-				$blogs = \App\Blog::all();
-				return
-					view($page)->
-					with(compact('blogs'));
                 break;
             case 'pages.portfolio':
                 $portfolio_items = \App\PortfolioItem::all();
