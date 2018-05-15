@@ -30,24 +30,6 @@ class CreateOtherEntities extends Migration
                 $table->string('link')->nullable();
             });
         }
-
-        if(!Schema::hasTable('blogs')) {
-            Schema::create('blogs', function (Blueprint $table) {
-                $table->string('name')->unique();
-                $table->mediumText('desc')->nullable();
-            });
-        }
-
-        if(!Schema::hasTable('blog_posts')) {
-            Schema::create('blog_posts', function (Blueprint $table) {
-                $table->increments('id');
-                $table->string('title');
-                $table->string('blog');
-                $table->foreign('blog')
-                    ->references('name')->on('blogs');
-                $table->mediumText('body');
-            });
-        }
     }
 
     /**
@@ -63,17 +45,6 @@ class CreateOtherEntities extends Migration
 
         if(Schema::hasTable('portfolio_items')) {
             Schema::drop('portfolio_items');
-        }
-
-        if(Schema::hasTable('blog_posts')) {
-            Schema::table('blog_posts', function (Blueprint $table) {
-                $table->dropForeign(['blog']);
-            });
-            Schema::drop('blog_posts');
-        }
-
-        if(Schema::hasTable('blogs')) {
-            Schema::drop('blogs');
         }
     }
 }

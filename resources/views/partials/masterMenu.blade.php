@@ -19,12 +19,6 @@
                     <p>Site Meta</p>
                 </a>
             </li>
-            <li class="{{ Request::segment(2) === 'blog' ? 'active' : '' }}">
-                <a href="/admin/blog/">
-                    <i class="fa fa-map fa-lw"></i>
-                    <p>Blogs</p>
-                </a>
-            </li>
             <li class="{{ Request::segment(2) === 'portfolio_items' ? 'active' : '' }}">
                 <a href="/admin/portfolio/">
                     <i class="fa fa-map fa-lw"></i>
