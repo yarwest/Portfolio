@@ -78,7 +78,7 @@ class PortfolioSeeder extends Seeder
         \App\PortfolioItem::create([
             'name'=>'Boelens Techniek Apeldoorn',
             'link'=>'https://github.com/yarwest/Boelens-Techniek',
-            'desc'=>'<img src="/images/portfolio/boelens_techniek.png" onclick="openOverlay(\'boelens_techniek.png\')" alt="Boelens Techniek Apeldoorn" style="width:100%;"><p>Boelens Techniek Apeldoorn is a company founded by my father which is aimed at providing services in mechenical and electrical engineering. To advertise this company I designed and created a webpage with information on the business aswell as posibilities to contact said company. The front-end is created using Bootstrap, SCSS and plain JavaScript, and handles minor user interaction and form validation. The back-end is also created using JavaScript and is responsible for additional validation of the form data and emailing it.</p>'
+            'desc'=>'<img src="/images/portfolio/boelens_techniek.png" onclick="openOverlay(\'boelens_techniek.png\')" alt="Boelens Techniek Apeldoorn" style="width:100%;"><p>Boelens Techniek Apeldoorn is a company founded by my father which is aimed at providing services in mechanical and electrical engineering. To advertise this company I designed and created a webpage with information on the business aswell as posibilities to contact said company. The front-end is created using Bootstrap, SCSS and plain JavaScript, and handles minor user interaction and form validation. The back-end is also created using JavaScript and is responsible for additional validation of the form data and emailing it.</p>'
         ]);
 
         \App\PortfolioItem::create([
