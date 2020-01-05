@@ -83,7 +83,6 @@ class PortfolioSeeder extends Seeder
 
         \App\PortfolioItem::create([
             'name'=>'Compean and Sons website',
-            'link'=>'https://github.com/surgiie/compean',
             'desc'=>'<div style="text-align:center;"><img src="/images/portfolio/compean_sons1.png" onclick="openOverlay(\'compean_sons1.png\')" alt="Compean and Sons" style="width:50%;"></div><p>The Compean and Sons platform was created for the orchard business owned by the family of Sergio Compean. This platform allows users to view all products, see at which markets these products will be available, and reserve products to pick up at a market of their choosing.<br>The project is build using Laravel, Bootstrap, SASS, and jQuery.</p><p>During this project I worked on the various sections of the admin panel in combination with the related CRUD tasks, the integration of the <a href="https://github.com/Trexology/laravel-pointable">Pointable package</a> to reward users for placing orders and referrals by giving them points which they can use for a discount, and lastly parts of the checkout process.</p><div style="text-align:center;"><img src="/images/portfolio/compean_sons2.png" onclick="openOverlay(\'compean_sons2.png\')" alt="Compean and Sons" style="width:50%;"></div>'
         ]);
 
