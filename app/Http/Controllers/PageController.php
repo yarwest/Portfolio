@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 class PageController extends Controller {
 
 	//the magical method
-	public function show($page)
+	public function show($page='index')
 	{
 	    $page = str_replace('/', '.', $page);
         if (! str_contains($page, 'pages')) {
@@ -31,12 +31,8 @@ class PageController extends Controller {
 
             case 'pages.index':
                 return
-                    view($page);
-                break;
-            case 'pages.contact':
-                return
                     view($page)->
-                    with(compact('site_meta'));
+                    with(compact('site_meta'));;
                 break;
             case 'pages.portfolio':
                 $portfolio_items = \App\PortfolioItem::all();
@@ -50,28 +46,6 @@ class PageController extends Controller {
                     view($page, compact('site_meta'));
 				break;
 		}
-
 		//take them there
 	}
-
-    /*public function send(Request $request) {
-        $name = $request->input('name');
-        $email = $request->input('email');
-        $textAreaInput = $request->input('message');
-
-		if($request->input('birthday') == null){
-	        Mail::send('emails.form', ['name'=>$name, 'email'=>$email, 'textAreaInput'=>$textAreaInput], function ($m) {
-	            $m->to('yarnoboelens@gmail.com', 'Yarno Boelens')
-	                ->subject('Someone filled in the contact form');
-	        });
-
-	        session()->flash('message', 'Successfully send your message');
-	        session()->flash('alert-class', 'alert-success');
-		} else {
-			session()->flash('message', 'Fucking bot');
-	        session()->flash('alert-class', 'alert-danger');
-		}
-
-        return redirect()->back();
-    }*/
 }

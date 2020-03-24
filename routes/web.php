@@ -11,19 +11,6 @@
 |
 */
 
-//sets all of Laravel's Auth routes
-/*Route::auth();
-Route::get('/login/activation/check/{token}', 'Auth\LoginController@activate');
-
-Route::group(['middleware'  =>  ['auth']], function () {
-    //Any calls to any admin routes must be authenticated and must have permission
-    Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'permission'], function () {
-        Route::resource('/', 'DashboardController');
-        Route::resource('site_meta', 'SiteMetaController');
-    });
-});*/
-
-
 //any other page in pages
 Route::get('/soundboard', function(){
     return File::get(public_path().'/SoundBoard/web/index.html');

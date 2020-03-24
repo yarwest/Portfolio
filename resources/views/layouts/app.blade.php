@@ -59,11 +59,10 @@
     <!-- Loading font-awesome asynchronously -->
     <script type="text/javascript">
         (function() {
-            var css = document.createElement('link');
-            css.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css';
-            css.rel = 'stylesheet';
-            css.type = 'text/css';
-            document.getElementsByTagName('head')[0].appendChild(css);
+            var js = document.createElement('script');
+            js.src = 'https://kit.fontawesome.com/070cf10a55.js';
+            js.crossorigin = 'anonymous';
+            document.getElementsByTagName('head')[0].appendChild(js);
         })();
     </script>
     <script>

@@ -16,17 +16,6 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="{{ Request::segment(1) === null || Request::segment(1) === 'index' ? 'active' : '' }}"><a href="/">Home</a></li>
                 <li class="{{ Request::segment(1) === 'portfolio' ? 'active' : '' }}"><a href="/portfolio">Portfolio</a></li>
-                <li class="{{ Request::segment(1) === 'contact' ? 'active' : '' }}"><a href="/contact">Contact</a></li>
-                <?php /*@if(Auth::check())
-
-                @if(Auth::user()->isAdmin)
-
-                @endif
-                <li class="logout"><a href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
-                @else
-                <li class="{{ Request::segment(1) === 'login' ? 'active' : '' }}"><a href="/login"><i class="fa fa-user" aria-hidden="true"></i> Login</a></li>
-                <li class="{{ Request::segment(1) === 'register' ? 'active' : '' }}"><a href="/register"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
-                @endif */ ?>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
