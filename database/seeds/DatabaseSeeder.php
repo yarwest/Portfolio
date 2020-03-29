@@ -75,6 +75,12 @@ class PortfolioSeeder extends Seeder
         ]);
 
         \App\PortfolioItem::create([
+            'name'=>'Print.com',
+            'link'=>'https://print.com',
+            'desc'=>'<p>Print.com is a Dutch start-up focussed on providing quality printed goods for a fair price. Part of this process is an software infrastructure used for placing, processing and shipping orders. I worked as part of a team of software developers to create and improve this infrastructure and work on various applications. The majority of these applications are created using Vue.js for the front-end and TypeScript for Serverless back-end microservices. For data storage DynamoDB, provided as part of the Amazon Web Services platform, is utilized. I worked on various projects, one that I worked on by myself is the SatisfactionService and customer satisfaction form that are used for collecting feedback from customers in the applications.</p><img src="/images/portfolio/customer_satisfaction.gif" onclick="openOverlay(\'customer_satisfaction.gif\')" alt="Customer Satisfaction Form" style="width:100%;"><p>This GIF shows the form as it was implemented in the web application that regular customers use for ordering their printed goods. The way this service is set up allows for the creation of satisfaction forms in any part of the Print.com infrastructure and allows the developers to further improve the software based on real time feedback. At the time of writing, over 2100 customers have rated the ordering experience an average of 4.47 stars.'
+        ]);
+
+        \App\PortfolioItem::create([
             'name'=>'Boelens Techniek Apeldoorn',
             'link'=>'https://github.com/yarwest/Boelens-Techniek',
             'desc'=>'<img src="/images/portfolio/boelens_techniek.png" onclick="openOverlay(\'boelens_techniek.png\')" alt="Boelens Techniek Apeldoorn" style="width:100%;"><p>Boelens Techniek Apeldoorn is a company founded by my father which is aimed at providing services in mechanical and electrical engineering. To advertise this company I designed and created a webpage with information on the business as well as posibilities to contact said company. The front-end is created using Bootstrap, SCSS and plain JavaScript, and handles minor user interaction and form validation. The back-end is also created using JavaScript and is responsible for additional validation of the form data and emailing it.</p>'
