@@ -16,7 +16,7 @@ return [
 
     'mailgun' => [
         'domain' => env('yarwest.com'),
-        'secret' => env('***REMOVED***'),
+        'secret' => env('example'),
     ],
 
     'ses' => [
